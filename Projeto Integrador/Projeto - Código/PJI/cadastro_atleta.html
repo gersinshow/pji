@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_atleta.css">
+    <link rel="shortcut icon" href="img/Logo.ico">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="form-box">
+            <h2>Cadastro Atleta</h2>
+
+            <form action="#">
+                <div class="input-group">
+                    <label for="responsavel">Nome Completo do Responsável</label>
+                    <input type="text" class="form-control" id="responsavel" name="responsavel" placeholder = "Digite o nome do Responsável" required>
+                </div>
+                <div class="input-group">
+                    <label for="nome"> Nome Completo Atleta</label>
+                    <input type="text" id="nome" placeholder="Digite o seu Nome Completo" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" placeholder="Digite o seu CPF" required>
+                </div>
+                <div class="input-group">
+                    <label for="rg">RG</label>
+                    <input type="text" class="form-control" id="rg" name="rg" placeholder="Digite o seu RG" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="ra">RA (Prontuário)</label>
+                    <input type="text" class="form-control" id="ra" name="ra" placeholder="Digite o seu RA" required>
+                </div>
+                <div class="input-group">
+                    <label for="data_nasc">Data de Nascimento</label>
+                    <input type="date" id="data_nasc" required>
+                </div>
+                <div class="input-group">
+                    <label> Sexo: </label>
+                </div>
+
+                <div class="sexo">
+                    <input type="radio" value="Masculino" name="sexo"> Masculino <br>
+                    <input type="radio" value="Feminino" name="sexo"> Feminino <br>
+                </div>
+
+                
+
+                
+
+                <div class="input-group">
+                    <label for="rgpdf">Imagem do RG (PDF, máximo 1MB)</label>
+                    <input type="file" class="form-control-file" id="rgpdf" name="rgpdf" accept=".pdf" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="fotopdf">Foto de Rosto (PDF, máximo 1MB)</label>
+                    <input type="file" class="form-control-file" id="fotopdf" name="fotopdf" accept=".pdf" required>
+                </div>
+
+                <div class="input-group">
+                    <button>Cadastrar</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

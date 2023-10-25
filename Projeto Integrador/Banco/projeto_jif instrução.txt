@@ -1,0 +1,20 @@
+Instrução para cadastramento
+
+CADASTROS GERAIS
+1. cadastrar aS modalidadeS
+2. cadastrar as unidades - T1
+3. cadastrar as pessoas - T2
+
+PARA CADA CAMPEONATO
+1. cadastrar o campeonato - T3
+2. cadastrar a equipe - T4
+--- para cada equipe participante 
+-------1. cadastrar os dados da equipe
+------ 2. cadastrar a delegação
+------ 3. cadastrar os atletas da equipe
+
+2. Para cada partida
+--- cadastrar a partida
+--- cadastrar a escalação das equipes
+--- cadastrar os dados do desempenho das equipes
+--- cadastrar os gols das equipes
