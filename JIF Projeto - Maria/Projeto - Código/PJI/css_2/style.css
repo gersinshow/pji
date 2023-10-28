@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    /* background-color: #212529; */
+    background-image: url('fundo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+.w50{
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
+.boxzinha{
+    display: flex;
+    width: 930px;
+}
+.img-boxzinha{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px  0 0 20px;
+}
+.img-boxzinha img{
+    width: 100%;
+}
+.formulario-boxzinha{
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+}
+.formulario-boxzinha h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+.formulario-boxzinha p{
+    font-weight: bold;
+    color: #3D3D3D;
+}
+.formulario-boxzinha p a{
+    color: green;
+    text-decoration: none;
+}
+.formulario-boxzinha form{
+    margin: 20px 0;
+}
+form .inputszinha{
+    margin-bottom: 15px;
+}
+form .inputszinha label{
+    color: #3D3D3D;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sexo{
+    color: #3D3D3D;
+    margin-bottom: 15px;
+}
+
+form .inputszinha input{
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+form .inputszinha input:focus{
+    border-color: black;
+}
+form .inputszinha button{
+    width: 100%;
+    height: 47px;
+    background: green;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+@media (max-width:930px) {
+    .img-boxzinha{
+        display: none;
+    }
+    .boxzinha{
+        width: 700px;
+    }
+    .formulario-boxzinha{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+@media (max-width:500px) {
+    .w50{
+        width: 100%;
+        padding: 0;
+    }
+}

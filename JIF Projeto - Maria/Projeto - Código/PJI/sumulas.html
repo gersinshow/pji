@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="img/Logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>PJI</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- HEAD Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand" href="index.html" id="jif"><img
+                    src="img/Logo_JIF_2022_horizontal-PhotoRoom.png-PhotoRoom.png" alt="" style="width: 50px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="sobre.html">Sobre o JIF</a>
+                        <a class="nav-item nav-link active" href="informacoes.html">Informações</a>
+                        <a class="nav-item nav-link active" href="contato.html">Página de contato</a>
+                    </div>
+                </div>
+                <div class="position-absolute top-50 end-0 translate-middle-y p-2">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="cadastro.html">Cadastro Atleta</a>
+                        <a class="nav-item nav-link active" href="sumulas.html">Cadastro Súmulas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo -->
+
+    <!-- Formulário de Registro de Súmulas de Futsal -->
+    <div class="container mt-5">
+        <h4 class="text-center">Formulário de Registro de Súmulas de Futsal</h4>
+        <br><br><br>
+
+        <form>
+            <!-- Informações sobre o Jogo -->
+            <div class="form-group">
+                <label for="data_jogo">Data do Jogo</label>
+                <input type="date" class="form-control" id="data_jogo" name="data_jogo" required>
+            </div>
+            <div class="form-group">
+                <label for="local_jogo">Local do Jogo</label>
+                <input type="text" class="form-control" id="local_jogo" name="local_jogo" required>
+            </div>
+            <br><br><br>
+
+            <!-- Informações sobre as Equipes -->
+            <h5>Equipe A</h5>
+            <div class="form-group">
+                <label for="tecnico_equipe_a">Nome do Técnico</label>
+                <input type="text" class="form-control" id="tecnico_equipe_a" name="tecnico_equipe_a" required>
+            </div>
+            <div class="form-group">
+                <label for="capitao_equipe_a">Nome do Capitão</label>
+                <input type="text" class="form-control" id="capitao_equipe_a" name="capitao_equipe_a">
+            </div>
+            <div class="form-group">
+                <label for="massagista_equipe_a">Nome do Massagista</label>
+                <input type="text" class="form-control" id="massagista_equipe_a" name="massagista_equipe_a">
+            </div>
+            <br><br><br>
+
+            <h5>Equipe B</h5>
+            <div class="form-group">
+                <label for="tecnico_equipe_b">Nome do Técnico</label>
+                <input type="text" class="form-control" id="tecnico_equipe_b" name="tecnico_equipe_b" required>
+            </div>
+            <div class="form-group">
+                <label for="capitao_equipe_b">Nome do Capitão</label>
+                <input type="text" class="form-control" id="capitao_equipe_b" name="capitao_equipe_b">
+            </div>
+            <div class="form-group">
+                <label for="massagista_equipe_b">Nome do Massagista</label>
+                <input type="text" class="form-control" id="massagista_equipe_b" name="massagista_equipe_b">
+            </div>
+            <br><br><br>
+
+            <!-- Detalhes do Jogo -->
+            <h5>Detalhes do Jogo</h5>
+            <div class="form-group">
+                <label for="punicoes">Punições sobre determinado atleta (cartão vermelho e/ou amarelo)</label>
+                <textarea class="form-control" id="punicoes" name="punicoes" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="gols">Gols feitos por determinado atleta</label>
+                <textarea class="form-control" id="gols" name="gols" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pedidos_tempo">Pedidos de Tempo</label>
+                <textarea class="form-control" id="pedidos_tempo" name="pedidos_tempo" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="faltas_acumulativas">Faltas Acumulativas</label>
+                <textarea class="form-control" id="faltas_acumulativas" name="faltas_acumulativas" rows="3"></textarea>
+            </div>
+            <br><br><br>
+
+            <!-- Atletas Iniciantes -->
+            <h5>Atletas Iniciantes</h5>
+            <div class="form-group">
+                <label for="atletas_iniciantes">Lista de Atletas Iniciantes</label>
+                <textarea class="form-control" id="atletas_iniciantes" name="atletas_iniciantes" rows="3"></textarea>
+            </div>
+            <br><br><br>
+
+            <!-- Ocorrências -->
+            <h5>Ocorrências</h5>
+            <div class="form-group">
+                <label for="ocorrencias">Ocorrências (se houver)</label>
+                <textarea class="form-control" id="ocorrencias" name="ocorrencias" rows="3"></textarea>
+            </div>
+            <br>
+            <!-- Botão de Envio -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-success">Enviar Súmula</button>
+            </div>
+        </form>
+        <br><br><br><br><br><br>
+    </div>
+
+
+    <!-- Footer Rodapé -->
+    <footer class="bg-light text-center text-lg-start fixed-bottom">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-dark" href="#">Mariazinha's Team</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+
+</html>
